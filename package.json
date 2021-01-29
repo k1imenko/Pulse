@@ -1,5 +1,5 @@
 {
-  "name": "uber",
+  "name": "pulse",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,7 +7,6 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
@@ -17,5 +16,14 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k1imenko/Pulse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/k1imenko/Pulse/issues"
+  },
+  "homepage": "https://github.com/k1imenko/Pulse#readme",
+  "description": ""
 }
