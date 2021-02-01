@@ -1,0 +1,10 @@
+@media (max-width: 1200px) {
+    .consultation {
+        background: url('../../../img/consult_bg.png') center (center/cover) no-repeat;
+    }
+    .title {
+        &_left {
+            font-size: 30px;
+        }
+    }
+}
