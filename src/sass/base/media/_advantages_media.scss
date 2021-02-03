@@ -27,3 +27,23 @@
         }
     }
 }
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 20px;
+    }
+    .advantages {
+        &__item {
+            margin-right: 15px;
+        }
+        &__subtitle {
+            text-align: center;
+            font-size: 12px;
+        }
+        &__descr {
+            display: block;
+            margin: 0 auto;
+            font-size: 11px;
+        }
+    }
+}

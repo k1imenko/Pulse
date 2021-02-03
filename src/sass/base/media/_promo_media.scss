@@ -73,7 +73,7 @@
     }
     .header {
         img {
-            padding-left: 25px;
+            padding-left: 10px;
         }
         &__official {
             margin-left: 80px;
@@ -94,7 +94,7 @@
     .header {
         &__logo {
             img {
-                margin-top: 20px;
+                margin-top: 10px;
                 width: 60%;
             }
         }
@@ -106,6 +106,37 @@
         }
     }
     .promo {
-        padding: 5px 0 10px 0;
+        background: url('../../img/bg.jpg') center (center/cover) no-repeat;
+        &__header {
+            padding: 10px;
+            font-size: 28px;
+            line-height: 30px;
+        }
+        &__subheader {
+            font-size: 15px;
+            padding: 10px;
+        }
+        &__icons {
+            width: 300px;
+            margin-top: 28px;
+            margin-right: 6px;
+        }
+        &__icon {
+            font-size: 13px;
+        }
+        .button {
+            &_main {
+                width: 220px;
+                font-size: 12px;
+                margin-right: 12px;
+            }
+        }
+        &__link {
+            font-size: 14px;
+        }
+        a {
+            font-size: 12px;
+            margin-right: 12px;
+        }
     }
 }
