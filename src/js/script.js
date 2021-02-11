@@ -7,9 +7,15 @@ $(document).ready(function() {
         responsive: [{
             breakpoint: 1200,
             settings: {
+                dots: false,
+                arrows: false
+            },
+        }, {
+            breakpoint: 991,
+            settings: {
                 dots: true,
                 arrows: false
-            }
+            },
         }]
     });
 
