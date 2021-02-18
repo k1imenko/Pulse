@@ -9,3 +9,15 @@
         max-width: 680px;
     }
 }
+
+@media (max-width: 768px) {
+    .consultation {
+        background: url('../../../img/consult_bg.png') center (center/cover) no-repeat;
+    }
+    .button {
+        &_submit {
+            width: 303px;
+            font-size: 16px;
+        }
+    }
+}

@@ -21,3 +21,41 @@
         width: 400px;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .header {
+        &__official {
+            display: none;
+        }
+        &__logo {
+            width: 220px;
+        }
+    }
+    .button {
+        width: 140px;
+        font-size: 11px;
+        &_main {
+            margin-top: 55px;
+            width: 200px;
+            font-size: 13px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 38px;
+        }
+        &__subheader {
+            font-size: 22px;
+            line-height: 14px;
+        }
+        &__link {
+            // font-size: 14px;
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}

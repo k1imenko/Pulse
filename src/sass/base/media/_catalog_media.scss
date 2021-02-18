@@ -14,3 +14,30 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .catalog {
+        &__tabs {
+            margin-left: 5px;
+        }
+    }
+    .catalog-item {
+        width: 234px;
+        margin-left: 10px;
+        &__price {
+            font-size: 15px;
+        }
+        &__descr {
+            padding: 0 17px;
+        }
+        &__subtitle {
+            padding: 0 12px;
+        }
+    }
+    .button {
+        &_mini {
+            width: 90px;
+            font-size: 14px;
+        }
+    }
+}
