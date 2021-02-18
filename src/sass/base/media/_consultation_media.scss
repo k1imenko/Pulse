@@ -21,3 +21,29 @@
         }
     }
 }
+
+@media (max-width: 575px) {
+    .consultation {
+        background: url('../../../img/consult_bg.jpg') center (center/cover) no-repeat;
+        &__descr {
+            margin-left: 10px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    .title {
+        &_left {
+            margin-left: 10px;
+            font-size: 30px;
+        }
+    }
+    input {
+        margin-left: 10px;
+    }
+    .button {
+        &_submit {
+            margin-left: 10px;
+            width: 293px;
+        }
+    }
+}
