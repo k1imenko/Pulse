@@ -42,4 +42,19 @@
     }
 }
 
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+    .catalog {
+        &__tabs {
+            display: flex;
+            flex-direction: column;
+        }
+        &__tab {
+            margin-top: 15px;
+        }
+    }
+    .catalog-item {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+}

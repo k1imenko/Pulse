@@ -9,3 +9,40 @@
         }
     }
 }
+
+@media (max-width: 575px) {
+    .title {
+        &_feed {
+            font-size: 32px;
+        }
+    }
+    .reviews {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                padding-right: 120px;
+            }
+        }
+        &__name {
+            margin-top: 15px;
+            padding-left: 20px;
+            text-align: left;
+        }
+        &__progress {
+            padding-left: 20px;
+            text-align: left;
+        }
+        &__text {
+            font-size: 13px;
+            padding-left: 20px;
+            padding-right: 10px;
+            text-align: left;
+        }
+        span {
+            display: block;
+        }
+    }
+}
