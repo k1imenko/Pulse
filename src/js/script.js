@@ -53,4 +53,59 @@ $(document).ready(function() {
             $('.overlay, #order').fadeIn('slow');
         })
     });
+
+    // $('#consultation-form').validate();
+    // $('#consultation form).validate({
+    //     rules: {
+    //         name: "required",
+    //         phone: "required",
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         }
+    //     },
+    //     messages: {
+    //         name: "Пожалуйста, введите ваше имя",
+    //         phone: "Пожалуйста, введите ваш номер телефона",
+    //         email: {
+    //             required: "Пожалуйста, введите вашу почту",
+    //             email: "Неправильно введен адрес почты"
+    //         }
+    //     }
+    // });
+    // $('#order form').validate();
+
+    function valideForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlingth: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите ваше имя",
+                    minlength: jQuery.validator.format("Введите {0} символа!")
+                },
+                phone: "Пожалуйста, введите ваш номер телефона",
+                email: {
+                    required: "Пожалуйста, введите вашу почту",
+                    email: "Неправильно введен адрес почты"
+                }
+            }
+        });
+    };
+
+    valideForms('#consultation-form');
+    valideForms('#consultation form');
+    valideForms('#order form');
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
+
 });
