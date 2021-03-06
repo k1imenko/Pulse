@@ -19,7 +19,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465;                                    // TCP port to connect to
  
 $mail->setFrom('alxndrklim@gmail.com', 'Pulse');   // От кого письмо 
-$mail->addAddress('');     // Add a recipient
+$mail->addAddress('alxndrklim@gmail.com');     // Add a recipient
 // $mail->addAddress('');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -34,11 +34,5 @@ $mail->Body    = '
 	Имя: ' . $name . ' <br>
 	Номер телефона: ' . $phone . '<br>
 	E-mail: ' . $email . '';
-
-if(!$mail->send()) {
-    return false;
-} else {
-    return true;
-}
 
 ?>
