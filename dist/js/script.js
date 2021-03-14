@@ -124,6 +124,7 @@ $(document).ready(function() {
         return false;
     });
 
+    //smooth scroll and pageup
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 1600) {
@@ -134,7 +135,7 @@ $(document).ready(function() {
     });
 
 
-
+    //Скрипт плавного скролла
     $("a[href^=#up]").click(function() {
         var _href = $(this).attr("href");
         $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
