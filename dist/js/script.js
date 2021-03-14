@@ -1,7 +1,6 @@
 $(document).ready(function() {
     $('.carousel__inner').slick({
         speed: 1200,
-        // adaptiveHeight: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.svg"></button>',
         responsive: [{
@@ -38,7 +37,7 @@ $(document).ready(function() {
     toggleSlide('.catalog-item_back');
     toggleSlide('.catalog-item__link');
 
-    //Modal Windows
+
 
     $('[data-modal=consultation]').on('click', function() {
         $('.overlay, #consultation').fadeIn('slow');
@@ -54,26 +53,7 @@ $(document).ready(function() {
         })
     });
 
-    // $('#consultation-form').validate();
-    // $('#consultation form).validate({
-    //     rules: {
-    //         name: "required",
-    //         phone: "required",
-    //         email: {
-    //             required: true,
-    //             email: true
-    //         }
-    //     },
-    //     messages: {
-    //         name: "Пожалуйста, введите ваше имя",
-    //         phone: "Пожалуйста, введите ваш номер телефона",
-    //         email: {
-    //             required: "Пожалуйста, введите вашу почту",
-    //             email: "Неправильно введен адрес почты"
-    //         }
-    //     }
-    // });
-    // $('#order form').validate();
+
 
     function validateForms(form) {
         $(form).validate({
@@ -124,7 +104,6 @@ $(document).ready(function() {
         return false;
     });
 
-    //smooth scroll and pageup
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 1600) {
@@ -135,7 +114,7 @@ $(document).ready(function() {
     });
 
 
-    //Скрипт плавного скролла
+
     $("a[href^=#up]").click(function() {
         var _href = $(this).attr("href");
         $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
